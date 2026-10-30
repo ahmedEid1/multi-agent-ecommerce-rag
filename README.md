@@ -11,6 +11,14 @@ Five cooperating AI agents that handle an e-commerce store's support requests: o
 > [Future AWS Agent Engineer Nanodegree](https://www.udacity.com/scholarships/aws-ai-ml-scholars).
 > My notes and the other projects from the program: **[aws-agent-engineer-notes](https://github.com/ahmedEid1/aws-agent-engineer-notes)**.
 
+## Origin
+
+Built for the Future AWS Agent Engineer Nanodegree on Udacity's starter code (`project/starter` in [udacity/cd14764-aws-agentic-c3-classroom](https://github.com/udacity/cd14764-aws-agentic-c3-classroom/tree/main/project/starter)).
+
+- **From the starter, unchanged:** the CloudFormation stack, seed and cleanup scripts in `infrastructure/`, `config.py`, `requirements.txt`, the helper modules in `src/` (`agent_observability.py`, `agent_utils.py`, `agentcore_cli.py`, `bedrock_kb_retrieval.py`, `demo.py`), the AgentCore CLI project in `agentcore/`, the diagrams in `docs/diagrams/` and the grading suite `tests/test_agent.py`.
+- **From the starter, completed by me:** `src/agent_orchestrator.py` came with the shared-state helpers and the command-line entry points, and TODOs for the rest. I wrote the five agents and three retrievers with their prompts and tools, the routing tools, the guardrail, the runtime deployment, and the Memory and logging setup.
+- **Mine:** the `offline_checks/` suite and the screenshots in `docs/images/`.
+
 ## What it does
 
 | Customer asks | Agents involved | Outcome (live run) |
@@ -110,4 +118,4 @@ python infrastructure/cleanup.py --yes      # tear everything down
 
 ## Credits and license
 
-Built on Udacity's project starter: infrastructure, configuration, helper modules, the CLI wrapper and the grading suite. The agent system in `src/agent_orchestrator.py` and the `offline_checks/` suite are my work. Udacity's starter material is licensed under the terms in [LICENSE.md](LICENSE.md) (CC BY-NC-ND 4.0 with Udacity's modifications).
+[Origin](#origin) lists which parts came from Udacity's starter and which are mine. Udacity's starter material is licensed under the terms in [LICENSE.md](LICENSE.md) (CC BY-NC-ND 4.0 with Udacity's modifications).
